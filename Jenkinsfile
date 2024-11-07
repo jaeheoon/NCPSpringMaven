@@ -6,10 +6,6 @@ pipeline {
                 echo '1번 stage 실행'
                 // Git checkout 명령어
             }
-            steps {
-                echo '1-1번 stage 실행'
-                // Git checkout 명령어
-            }
         }
         stage('222') {
             steps {
