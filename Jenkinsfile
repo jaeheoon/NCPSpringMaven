@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('11111') {
+        stage('111') {
             steps {
                 echo '1번 stage 실행'
                 // Git checkout 명령어
