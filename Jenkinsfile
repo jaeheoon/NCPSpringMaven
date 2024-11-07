@@ -1,28 +1,26 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
+        stage('111') {
             steps {
-                echo 'Checkout Code'
+                echo '1번 stage 실행'
+                // Git checkout 명령어
+            }
+            steps {
+                echo '1-1번 stage 실행'
                 // Git checkout 명령어
             }
         }
-        stage('Build') {
+        stage('222') {
             steps {
-                echo 'Building the project'
+                echo '2번 stage 실행'
                 // Maven 빌드 명령어
             }
         }
-        stage('Test') {
+        stage('333') {
             steps {
-                echo 'Running tests'
+                echo '3번 stage 실행'
                 // 테스트 실행 명령어
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying to production'
-                // 배포 명령어
             }
         }
     }
