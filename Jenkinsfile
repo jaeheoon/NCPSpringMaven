@@ -1,8 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout Main Repo') {
-            echo "check out"
-        }
+        echo "check out"
     }
 }
